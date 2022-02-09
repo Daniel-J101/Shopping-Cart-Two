@@ -6,7 +6,7 @@ public class Item {
 
     public Item(String name, double price) {
 
-        if (name == null || name.isBlank()) {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
         if (price < 0) {
@@ -31,7 +31,7 @@ public class Item {
     }
 
     public void setName(String name) {
-        if (name == null || name.isBlank()) {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
         this.name = name;
